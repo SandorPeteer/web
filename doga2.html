@@ -18,9 +18,15 @@
         <input type="button" onclick="myfunction1()" value="ENTER">
     </form>
     <br>
-    <img id="kep" style="visibility: hidden; width: 20rem;" src="img/egyszerusites2.jpg" alt="kapcsolás">
+    <img id="kep" style="visibility: show; width: 20rem;" src="img/egyszerusites2.jpg" alt="kapcsolás">
     <br>
-    <p id="kiir"></p>
+    <p id="Re">1. Eredő ellenállás számítása!</p>
+    <p id="I">2. Főág áramerőssége!</p>
+    <p id="UR2">3. R2 ellenállás feszültsége!</p>
+    <p id="UR14">4. R1 és R4 ellenállás feszültsége!</p>
+    <p id="I1">5. R1 ellenálláson átfolyó áramerősség értéke!</p>
+    <p id="I4">6. R4 ellenálláson átfolyó áramerősség értéke!</p>
+    <p id="Pö">7. Az ellenállások teljesítmény értéke!</p>
 
     <script>
         function myfunction1() {
@@ -33,13 +39,33 @@
             var R2 = date
             var R3 = date
 
-            var R14 = (R1 * R4) / (R1 + R4);
-            var Re = R14 + R2
-
-
             document.getElementById('kep').style.visibility = "visible"
-            document.getElementById("kiir").innerHTML = " U<sub>XY</sub> = " + U + " Volt <br> R<sub>1</sub> = R<sub>2</sub> = R<sub>3</sub> = " + R1 + " &#8486; <br> R4 = " + R4 + " &#8486;"
+
+            var R14 = (R1 * R4) / (R1 + R4);
+            var Re = R14 + R2;
+
+            document.getElementById("Re").innerHTML = " U<sub>XY</sub> = " + U + " Volt <br> R<sub>1</sub> = R<sub>2</sub> = R<sub>3</sub> = " + R1 + " &#8486; <br> R<sub>4</sub> = " + R4 + " &#8486;"
                 + "<br><br> Az eredő ellenállás számítása: <br> Re = ( R1 x R4 ) + R2 <br> Re = " + Re + " &#8486;";
+
+            var I = U / Re;
+            document.getElementById('I').innerHTML = "Az áramkörben folyó összes áramerősség értéke: <br> I = " + (I) + " A"
+
+            var UR2 = R2*I
+            document.getElementById('UR2').innerHTML = "Az R2 ellenálláson eső feszültség: <br> UR2 = " + UR2 + " V"
+
+            var UR14 = U-UR2
+            document.getElementById('UR14').innerHTML = "Az R1 és R4 ellenálláson eső feszültség: <br> UR14 = " + UR14 + " V"
+
+            var I1 = UR14/R1
+            var I4 = UR14/R4
+            document.getElementById('I1').innerHTML = "Az R1 ellenálláson átfolyó áramerősség értéke: <br> I1 = " + (I1) + " A"
+            document.getElementById('I4').innerHTML = "Az R4 ellenálláson átfolyó áramerősség értéke: <br> I4 = " + (I4) + " A"
+
+            var P = U*I
+            var P1 = UR14*I1
+            var P2 = UR2*I
+            var P4 = UR14*I4
+            document.getElementById('Pö').innerHTML = "A teljesítmények számítása! <br> P = " + P + " W <br> P1 = " + P1 + " W <br> P2 = " + P2 + " W <br> P4 = " + P4 + " W "
 
         }
     </script>
