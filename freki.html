@@ -28,15 +28,19 @@
         <br>
     </form>
 
-    <p id="fo" >Az eredmény itt fog megjelenni, ha megnyomod az ENTER gombot!</p>
+    <p>Freki = </p>
+    <p id="fo" ></p>
+    <p> Hz</p>
 
     <script>
         function szamol(){
-            let freki = parseInt(induk.value) * parseInt(capac.value);
-            freki = Math.sqrt(freki);
-            freki = 2 * freki;
-            freki = Math.PI * freki;
-            freki = 1 / freki;
+            let L = parseInt(induk.value) / 1000000 ;
+            let C = parseInt(capac.value) / 1000000 ;
+            let freki =  L * C ;
+            freki = Math.sqrt(freki) ;
+            freki = 2 * freki ;
+            freki = Math.PI * freki ;
+            freki = 1 / freki ;
             document.getElementById('fo').innerHTML = freki;
         }
     </script>
