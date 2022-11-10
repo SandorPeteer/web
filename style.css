@@ -1,5 +1,5 @@
 body {
-    background-color: azure;
+    background-color: rgb(10, 44, 44);
     text-align: justify;
 }
 
@@ -37,4 +37,8 @@ h1 {
 
 h2 {
   color: cornflowerblue;
+}
+
+* {
+color: aliceblue;
 }
