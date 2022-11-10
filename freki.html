@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREKISZÁMOLÓ</title>
 </head>
+
 <body>
-    <ul class="sp">
-        <li class="sp"><a href="index.html">HOME</a></li>
-        <li class="sp"><a href="keplink.html">KÉPLINK</a></li>
-        <li class="sp"><a href="lista.html">LISTA</a></li>
-        <li class="sp"><a href="tablazat.html">ÓRAREND</a></li>
-        <li class="sp"><a href="doga1.html">IT DOGA1</a></li>
-        <li class="sp"><a href="doga2.html">IT DOGA2</a></li>
-        <li class="sp"><a class="active" href="freki.html">FREKISZÁMOLÓ</a></li>
-    </ul>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="keplink.html">KÉPLINK</a></li>
+            <li><a href="lista.html">LISTA</a></li>
+            <li><a href="tablazat.html">ÓRAREND</a></li>
+            <li><a href="doga1.html">IT DOGA1</a></li>
+            <li><a href="doga2.html">IT DOGA2</a></li>
+            <li><a class="active" href="freki.html">FREKISZÁMOLÓ</a></li>
+        </ul>
+    </div>
 
     <br>
     <img src="img/Rezonancia+frekvencia.jpg" alt="rezófreki képlet" width="300">
     <br><br>
-    
+
     <form action="">
         <label for="induk">Add meg az induktivitás értékét (L) : </label>
         <input type="number" name="induk" id="induk"> uH <br>
@@ -31,22 +35,23 @@
     </form>
 
     <span>Freki = </span>
-    <span id="fo" > ... </span>
+    <span id="fo"> ... </span>
     <span> Hz</span>
 
     <script>
-        function szamol(){
-            let L = parseInt(induk.value) / 1000000 ;
-            let C = parseInt(capac.value) / 1000000 ;
-            let freki =  L * C ;
-            freki = Math.sqrt(freki) ;
-            freki = 2 * freki ;
-            freki = Math.PI * freki ;
-            freki = 1 / freki ;
+        function szamol() {
+            let L = parseInt(induk.value) / 1000000;
+            let C = parseInt(capac.value) / 1000000;
+            let freki = L * C;
+            freki = Math.sqrt(freki);
+            freki = 2 * freki;
+            freki = Math.PI * freki;
+            freki = 1 / freki;
             document.getElementById('fo').innerHTML = freki;
         }
     </script>
 
 
 </body>
+
 </html>
