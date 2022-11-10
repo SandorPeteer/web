@@ -49,10 +49,10 @@ button {
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 50px;
   border:rgb(10, 44, 44) solid 3px;
 }
 
-input{
+input {
   background-color: darkmagenta;
 }
