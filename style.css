@@ -8,7 +8,7 @@ div.nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #310c0c;
 }
 
 div.nav li {
@@ -24,14 +24,14 @@ div.nav li a {
 }
 
 div.nav li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #251c52;
 }
 
 .active {
     background-color: #04AA6D;
 }
 
-h1{
+h1 {
   color: blueviolet;
 }
 
