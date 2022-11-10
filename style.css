@@ -42,3 +42,8 @@ h2 {
 * {
 color: rgb(200, 229, 255);
 }
+
+button {
+  background-color: black;
+  color: azure;
+}
