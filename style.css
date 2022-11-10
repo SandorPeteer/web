@@ -47,3 +47,8 @@ button {
   background-color: black;
   color: azure;
 }
+
+img {
+  border-radius: 5px;
+  border:rgb(10, 44, 44) solid 3px;
+}
