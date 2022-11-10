@@ -2,7 +2,7 @@ body {
     background-color: azure;
 }
 
-ul.sp {
+div > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,11 @@ ul.sp {
     background-color: #333;
   }
   
-li.sp {
+div > li{
     float: left;
   }
   
-li.sp a {
+div > a {
     display: block;
     color: white;
     text-align: center;
@@ -22,7 +22,7 @@ li.sp a {
     text-decoration: none;
   }
   
-li.sp a:hover:not(.active) {
+div > li a:hover:not(.active) {
     background-color: #111;
   }
   
