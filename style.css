@@ -58,26 +58,16 @@ input {
 }
 
 a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  color: #0087ca;
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
 }
 
-a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
 }
