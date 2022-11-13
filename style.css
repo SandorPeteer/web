@@ -57,13 +57,13 @@ input {
   background-color: rgba(183, 0, 255, 0.75);
 }
 
-.hover-underline-animation {
+a {
   display: inline-block;
   position: relative;
   color: #0087ca;
 }
 
-.hover-underline-animation::after {
+a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -76,7 +76,7 @@ input {
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover::after {
+a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
