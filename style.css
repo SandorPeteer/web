@@ -4,7 +4,7 @@ body {
 }
 
 .box1, .box2, .box3 {
-  margin: 1%;
+  margin: 10px;
   border: 1px solid black;
   width: 200px;
   height: 200px;
@@ -27,7 +27,7 @@ body {
 
 .box3 {
  background-color: blue;
- width: 402px;
+ width: 442px;
  height: 100px;
  clear: both;
 }
