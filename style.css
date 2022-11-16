@@ -103,9 +103,9 @@ a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
-.kollazs{
+.kepl{
   transition: 1s;
 }
-.kollazs:hover{
+.kepl:hover{
   transform: scale(1.1);
 }
