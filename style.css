@@ -102,3 +102,10 @@ a:hover,
 a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
+
+.kollazs{
+  transition: 1s;
+}
+.kollazs:hover{
+  transform: scale(1.1);
+}
