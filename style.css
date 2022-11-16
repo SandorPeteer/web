@@ -3,7 +3,7 @@ body {
     text-align: justify;
 }
 
-div {
+.box1, .box2, .box3 {
   padding-top: 80px;
   border: 1px solid black;
   width: 200px;
@@ -11,7 +11,7 @@ div {
   transition: .5s;
 }
 
-div:hover{
+.box1:hover, .box2:hover, .box3:hover{
   transform: scale(1.1);
 }
 
