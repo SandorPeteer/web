@@ -106,6 +106,6 @@ a:focus {
 .kepl img{
   transition: 1s;
 }
-.kepl img:hover{
-  transform: scale(1.1);
+.kepl:hover img{
+  transform: scale(1.02);
 }
