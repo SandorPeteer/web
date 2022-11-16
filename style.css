@@ -57,7 +57,7 @@ body {
 }
 
 .active {
-    background-color: #2c8c8c;
+    background-color: rgba(100, 200, 200, 1);
 }
 
 h1 {
