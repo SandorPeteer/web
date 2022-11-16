@@ -103,9 +103,9 @@ a:focus {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
-.kepl{
+.kepl img{
   transition: 1s;
 }
-.kepl:hover{
+.kepl img:hover{
   transform: scale(1.1);
 }
