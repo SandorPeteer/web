@@ -3,19 +3,19 @@ body {
     text-align: justify;
 }
 
-div.nav ul {
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0c0e31;
+    background-color: rgba(150,50,200,0.1);
 }
 
-div.nav li {
+.nav li {
     float: left;
 }
 
-div.nav li a {
+.nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -23,7 +23,7 @@ div.nav li a {
     text-decoration: none;
 }
 
-div.nav li a:hover:not(.active) {
+.nav li a:hover:not(.active) {
     background-color: #251c52;
 }
 
