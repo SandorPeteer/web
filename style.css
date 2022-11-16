@@ -4,7 +4,7 @@ body {
 }
 
 .box1, .box2, .box3 {
-  padding-top: 80px;
+  margin: 10%;
   border: 1px solid black;
   width: 200px;
   height: 200px;
