@@ -11,15 +11,18 @@ div {
 }
 
 .box1{
-  background-color: red;
+ background-color: red;
+ float: left;
 }
 
 .box2{
  background-color: greenyellow;
+ float: left;
 }
 
 .box3 {
-background-color: blue;
+ background-color: blue;
+ clear: both;
 }
 
 .nav ul {
