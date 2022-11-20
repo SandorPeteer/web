@@ -120,3 +120,14 @@ a:focus {
 .kepl:hover {
   transform: scale(1.02);
 }
+
+table {
+  text-align: center;
+  border: 3px solid rgba(152, 142, 161, 0.93);
+  border-collapse: collapse;
+}        
+td,
+th {
+  border: 1px dotted blue;
+  width: 100px;
+}
