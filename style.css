@@ -1,4 +1,5 @@
 * {
+  color: rgb(200, 229, 255);
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -79,10 +80,6 @@ h1 {
 
 h2 {
   color: rgb(172, 165, 232);
-}
-
-* {
-  color: rgb(200, 229, 255);
 }
 
 button {
