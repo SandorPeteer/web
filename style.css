@@ -13,6 +13,18 @@ body {
   text-align: justify;
 }
 
+.evszakok {
+  transition: 0.5s;
+  float: left;
+  margin: 1%;
+  text-align: center;
+}
+
+.evszakok:hover {
+  transform: scale(110%);
+  font-size: x-large;
+}
+
 .box1,
 .box2,
 .box3 {
@@ -125,7 +137,8 @@ table {
   text-align: center;
   border: 3px solid rgba(152, 142, 161, 0.93);
   border-collapse: collapse;
-}        
+}
+
 td,
 th {
   border: 1px dotted blue;
