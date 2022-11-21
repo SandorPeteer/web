@@ -7,7 +7,7 @@ document.onkeydown = function (e) {
     if (e.which == 123)
         isCtrl = true;
     if (((e.which == 85) || (e.which == 65) || (e.which == 88) || (e.which == 67) || (e.which == 86) || (e.which == 2) || (e.which == 3) || (e.which == 123) || (e.which == 83)) && isCtrl == true) {
-        alert('This is Function Disabled');
+        alert('CopyRight SP!!!');
         return false;
     }
 }
@@ -15,7 +15,7 @@ document.onkeydown = function (e) {
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
 function mischandler() {
-    alert('This is Function Disabled');
+    alert('CopyRight SP!!!');
     return false;
 }
 function mousehandler(e) {
