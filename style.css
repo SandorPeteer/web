@@ -152,13 +152,10 @@ th {
 }
 
 
-.foot{
+footer {
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-footer {
   margin-top: 3%;
   text-align: center;
   padding: 3px;
