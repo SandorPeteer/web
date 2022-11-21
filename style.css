@@ -153,16 +153,16 @@ th {
 
 
 .foot{
-  width: 100vmax;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer {
   margin-top: 3%;
   text-align: center;
-  padding: 3px;
-  background-color: rgb(51, 134, 134);
+  padding: 3px;  
+  background-color: blueviolet;
   color: white;
 }
