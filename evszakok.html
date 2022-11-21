@@ -5,51 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script disable-devtool-auto src='disable-devtool.min.js'></script>
-    <title>4 évszak</title>
+    <title>4 évszak SP DEMO</title>
+    <style>
+        * {
+            color: rgb(200, 229, 255);
+        }
+
+        body {
+            background-color: rgb(10, 44, 44);
+            text-align: justify;
+        }
+
+        img {
+            border-radius: 5%;
+            border: rgb(10, 44, 44) solid 3px;
+        }
+
+        .content {
+            float: left;
+            width: 350px;
+            height: 300px;
+        }
+
+        .content .evszakok {
+            transition: 0.5s;
+            float: left;
+            margin: 5%;
+            text-align: center;
+        }
+
+        .content .evszakok:hover {
+            transform: scale(110%);
+            font-size: large;
+        }
+
+        .content .evszakok img {
+            border: 4px solid darkcyan;
+            border-radius: 5px;
+            width: 300px;
+            height: 200px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(150, 50, 200, 0.1);
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav li a:hover:not(.active) {
+            background-color: #251c52;
+        }
+
+        .active {
+            background-color: rgba(100, 200, 200, 1);
+        }
+
+        footer {
+            margin-top: 3%;
+            text-align: center;
+            padding: 3px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .foot {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div class="nav">
         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="keplink.html">KÉPLINK</a></li>
-            <li><a href="lista.html">LISTA</a></li>
-            <li><a href="tablazat.html">ÓRAREND</a></li>
-            <li><a href="urlap.html">ŰRLAP</a></li>
-            <li><a href="div.html">DIV</a></li>
-            <li><a class="active" href="evszakok2.html">ÉVSZAKOK</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/index.html">HOME</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/keplink.html">KÉPLINK</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/lista.html">LISTA</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/tablazat.html">ÓRAREND</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/urlap.html">ŰRLAP</a></li>
+            <li><a href="http://sandorpeteer.github.io/web/div.html">DIV</a></li>
+            <li><a class="active" href="http://sandorpeteer.github.io/web/evszakok2.html">ÉVSZAKOK</a></li>
         </ul>
     </div>
     <br>
 
-    <div class="evszakok">
-        <img src="img/tavasz.jpg" alt="spring" title="Tavaszi kép">
-        <p>TAVASZ</p>
+
+    <div class="content">
+        <div class="evszakok">
+            <img src="http://sandorpeteer.github.io/web/img/tavasz.jpg" alt="spring" title="Tavaszi kép">
+            <p>TAVASZ</p>
+        </div>
     </div>
 
-    <div class="evszakok">
-        <img src="img/nyar.jpg" alt="summer" title="Nyári kép">
-        <p>NYÁR</p>
+    <div class="content">
+        <div class="evszakok">
+            <img src="http://sandorpeteer.github.io/web/img/nyar.jpg" alt="summer" title="Nyári kép">
+            <p>NYÁR</p>
+        </div>
     </div>
 
-    <div class="evszakok">
-        <img src="img/osz.jpg" alt="autumn" title="Őszi kép">
-        <p>ŐSZ</p>
+
+    <div class="content">
+        <div class="evszakok">
+            <img src="http://sandorpeteer.github.io/web/img/osz.jpg" alt="autumn" title="Őszi kép">
+            <p>ŐSZ</p>
+        </div>
     </div>
 
-    <div class="evszakok">
-        <img src="img/tel.jpg" alt="winter" title="Téli kép">
-        <p>TÉL</p>
+
+    <div class="content">
+        <div class="evszakok">
+            <img src="http://sandorpeteer.github.io/web/img/tel.jpg" alt="winter" title="Téli kép">
+            <p>TÉL</p>
+        </div>
     </div>
-<br><br><br>
+
+    <div class="content">
+        <div class="evszakok">
+        </div>
+    </div>
 
 
-
-    <br><br><br><br><br><br>
     <div class="foot">
         <footer>
             <p>©opyright: Sándor Péter<br>
