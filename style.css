@@ -150,3 +150,10 @@ th {
   border: 1px dotted blue;
   width: 100px;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(122, 133, 233);
+  color: white;
+}
