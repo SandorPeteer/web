@@ -22,7 +22,7 @@ body {
 
 .evszakok:hover {
   transform: scale(110%);
-  font-size: x-large;
+  font-size: large;
 }
 
 .evszakok img{    
