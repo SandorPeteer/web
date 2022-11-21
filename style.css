@@ -151,6 +151,13 @@ th {
   width: 100px;
 }
 
+
+.foot{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 footer {
   margin-top: 3%;
   text-align: center;
