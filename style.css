@@ -152,8 +152,9 @@ th {
 }
 
 footer {
+  margin-top: 3%;
   text-align: center;
   padding: 3px;
-  background-color: rgb(122, 133, 233);
+  background-color: rgb(51, 134, 134);
   color: white;
 }
