@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaniWEB</title>
+    <style>
+        * {
+            text-align: center;
+            color: yellow;
+            background-color: darkolivegreen;
+            font-size: 2vw;
+        }
+
+        iframe {
+            border: none;
+            width: 80vw;
+            height: 55.1vh;
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <form action="javascript:szamol()">
+        <fieldset id="szamolo">
+            <h1>Oldd meg a feladatot! </h1>
+            <label for="">1 + 1 = </label>
+            <input type="number" name="szam" id="szam" placeholder="mennyi?">
+            <input type="button" value="ELLENŐRZÉS" onclick="szamol()">
+        </fieldset>
+    </form>
+
+
+    <script>
+        function szamol() {
+            var x = document.getElementById("content");
+            var szamol = document.getElementById("szamolo");
+
+            if (szam.value == 2) {
+                alert('ÜGYES VAGY!')
+                document.getElementById('hiba').innerHTML = "";
+                x.style.display = "block";
+                szamol.style.display = "none";
+            }
+            else {
+                document.getElementById('hiba').innerHTML = "Még ennyit sem tudsz? Próbáld újra!";
+                x.style.display = "none";
+                szamol.style.display = "block";
+            }
+        }
+    </script>
+    <h1 id="hiba"></h1>
+    <div id="content">
+        <h1>Sziasztok Dani vok!</h1>
+        <p>Ez itt egy fostalicska <a href="https://www.youtube.com/embed/7p0_YOTDeo4">videó</a>, amit szeretek
+            nézegetni.</p>
+        <p>Ez itt egy másik fostalicska <a href="https://youtu.be/dQw4w9WgXcQ">videó</a>, amit szeretek nézegetni.</p>
+        <iframe src="https://www.youtube.com/embed/7p0_YOTDeo4?controls=1" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+</body>
+
+</html>
