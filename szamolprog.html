@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP OLDALA</title>
+</head>
+
+<body>
+
+    <form action="javascript:void(0)">
+        <fieldset>
+            <legend>Egyszerű számológép program</legend>
+            <input type="number" name="szam" id="szam1" placeholder="SZÁM 1" required> .
+            <input type="number" name="szam" id="szam2" placeholder="SZÁM 2" required> =
+            <input type="text" id="eredmeny" placeholder="eredmény" readonly>
+            <br><br>
+            <label for="muv">művelet:</label>
+            <input type="submit" name="muv" value="+" onclick="ad()">
+            <input type="submit" name="muv" value="-" onclick="kiv()">
+            <input type="submit" name="muv" value="x" onclick="szor()">
+            <input type="submit" name="muv" value=":" onclick="oszt()">
+            <input type="reset" name="muv" value="DEL">
+        </fieldset>
+    </form>
+    <script>
+        function ad() {
+            eredmeny.value = Number(szam1.value) + Number(szam2.value);
+        }
+
+        function kiv() {
+            eredmeny.value = Number(szam1.value) - Number(szam2.value);
+        }
+
+        function szor() {
+            eredmeny.value = Number(szam1.value) * Number(szam2.value);
+        }
+
+        function oszt() {
+            eredmeny.value = Number(szam1.value) / Number(szam2.value);
+        }
+    </script>
+
+
+
+    <footer>
+        <p> Copyright: Sándor Péter <sup>©</sup><br>
+            <a href="mailto:sandorp@kkszki.hu">sandorp@kkszki.hu</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
