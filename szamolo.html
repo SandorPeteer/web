@@ -101,30 +101,14 @@
                     <input type="text" id="eredmeny" placeholder="eredmény" readonly>
                     <br><br>
                     <label for="muv">művelet:</label>
-                    <input type="button" name="muv" value="+" onclick="ad()">
-                    <input type="button" name="muv" value="-" onclick="kiv()">
-                    <input type="button" name="muv" value="x" onclick="szor()">
-                    <input type="button" name="muv" value=":" onclick="oszt()">
+                    <input type="submit" name="muv" value="+" onclick="ad()">
+                    <input type="submit" name="muv" value="-" onclick="kiv()">
+                    <input type="submit" name="muv" value="x" onclick="szor()">
+                    <input type="submit" name="muv" value=":" onclick="oszt()">
                     <input type="reset" name="muv" value="DEL">
                 </fieldset>
             </form>
-            <script>
-                function ad() {
-                    eredmeny.value = Number(szam1.value) + Number(szam2.value);
-                }
-        
-                function kiv() {
-                    eredmeny.value = Number(szam1.value) - Number(szam2.value);
-                }
-        
-                function szor() {
-                    eredmeny.value = Number(szam1.value) * Number(szam2.value);
-                }
-        
-                function oszt() {
-                    eredmeny.value = Number(szam1.value) / Number(szam2.value);
-                }
-            </script>
+
         </div>
 
         <div class="right">
@@ -148,6 +132,23 @@
         </p>
     </footer>
 
+    <script>
+        function ad() {
+            eredmeny.value = Number(szam1.value) + Number(szam2.value);
+        }
+
+        function kiv() {
+            eredmeny.value = Number(szam1.value) - Number(szam2.value);
+        }
+
+        function szor() {
+            eredmeny.value = Number(szam1.value) * Number(szam2.value);
+        }
+
+        function oszt() {
+            eredmeny.value = Number(szam1.value) / Number(szam2.value);
+        }
+    </script>
     <script src="https://sandorpeteer.github.io/web/script.js"></script>
     <script src='https://sandorpeteer.github.io/web/disable-devtool.min.js'></script>
 </body>
