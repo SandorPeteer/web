@@ -10,9 +10,9 @@
         <fieldset>
             <legend>Számol</legend>
             <br>
-            <input type="number" name="szam" id="a" placeholder="szám1" required>
-            <input type="number" name="szam" id="b" placeholder="szám2" required>
-            <input type="text"   name="szam" id="c" placeholder="eredmény" readonly>
+            <input type="number" name="sz" id="a" placeholder="szám1" required>
+            <input type="number" name="sz" id="b" placeholder="szám2" required>
+            <input type="text"   name="sz" id="c" placeholder="eredmény" readonly>
             <br><br>
             <input type="submit" value="+" onclick="ad()">
             <input type="submit" value="-" onclick="kiv()">
@@ -21,5 +21,22 @@
             <input type="reset"  value="DEL">
         </fieldset>
     </form>
+    <script>
+        function ad() {
+            eredmeny.value = Number(szam1.value) + Number(szam2.value);
+        }
+
+        function kiv() {
+            eredmeny.value = Number(szam1.value) - Number(szam2.value);
+        }
+
+        function szor() {
+            eredmeny.value = Number(szam1.value) * Number(szam2.value);
+        }
+
+        function oszt() {
+            eredmeny.value = Number(szam1.value) / Number(szam2.value);
+        }
+</script>
 </body>
 </html>
