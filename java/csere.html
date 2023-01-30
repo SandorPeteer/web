@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csere</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    
+    <h1>CSEREPROGRAM v1.0</h1>
+
+    <div class="container">
+        <img id="cser" src="img/kor.png" width="200px" onclick="csere()">
+        <div class="centered">
+            <p id="kiir"></p>
+        </div>
+    </div>
+
+    <script>
+        let kep = 1;
+        let click = 0;
+        function csere() {
+            click = click + 1;
+            document.getElementById('kiir').innerText = click;
+            if (kep == 1) {
+                document.getElementById('cser').src = "img/haromsz.png";
+                kep = 2;
+            }
+            else {
+                document.getElementById('cser').src = "img/kor.png";
+                kep = 1;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
