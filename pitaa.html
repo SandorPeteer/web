@@ -8,9 +8,16 @@
     <title>Pitagorasz számoló feladat</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
-
         .font1 {
             font-family: 'Nosifer', cursive;
+        }
+        
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 0px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 100px solid #555;
         }
     </style>
 </head>
@@ -19,7 +26,7 @@
 
     <h1 class="font1">Pitagorasz tétel számoló</h1>
 
-    <img src="img/pita.avif" alt="Derékszögű háromszög">
+    <img src="https://sandorpeteer.github.io/web/img/pita.avif" alt="Derékszögű háromszög">
 
     <form action="javascript:void(0)">
         <fieldset style="width: 50%;">
@@ -35,22 +42,32 @@
         </fieldset>
     </form>
 
+    <br>
+    <h3>A megadott paraméterek alapján rajzolt háromszög:</h3>
+    <div id="triangle"></div>
+
     <script>
         function szamol() {
             if (a.value != 0 && b.value != 0) {
                 c.value = Math.sqrt((a.value * a.value) + (b.value * b.value));
                 document.getElementById("c").style.color = "red";
-            }
-            else if (a.value != 0 && c.value != 0) {
+
+            } else if (a.value != 0 && c.value != 0) {
                 b.value = Math.sqrt((c.value * c.value) - (a.value * a.value));
                 document.getElementById("b").style.color = "red";
-            }
-            else if (b.value != 0 && c.value != 0) {
+            } else if (b.value != 0 && c.value != 0) {
                 a.value = Math.sqrt((c.value * c.value) - (b.value * b.value));
                 document.getElementById("a").style.color = "red";
             }
 
+            const haromszog = document.getElementById("triangle");
+            haromszog.style = "border-left:" + 0 + "px solid transparent;" +
+                "border-right:" + b.value * 10 + "px solid transparent;" +
+                "border-bottom:" + a.value * 10 + "px solid red;";
+
+
         }
+
         function torles() {
             a.value = "";
             b.value = "";
