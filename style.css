@@ -28,11 +28,17 @@ body {
   font-size: large;
 }
 
-.evszakok img{    
+.evszakok img {
   border: 4px solid darkcyan;
   border-radius: 5px;
   width: 300px;
   height: 200px;
+}
+
+.evszakok-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1,
@@ -156,7 +162,7 @@ th {
 }
 
 
-.foot{
+.foot {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -166,7 +172,7 @@ th {
 footer {
   margin-top: 3%;
   text-align: center;
-  padding: 3px;  
+  padding: 3px;
   background-color: blueviolet;
   color: white;
 }
