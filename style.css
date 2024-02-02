@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   color: rgb(200, 229, 255);
   -webkit-user-select: none;
@@ -11,6 +13,7 @@
 body {
   background-color: rgb(10, 44, 44);
   text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .evszakok {
